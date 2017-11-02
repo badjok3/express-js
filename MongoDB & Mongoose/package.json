@@ -1,0 +1,16 @@
+{
+  "name": "mongoPlayground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "daniel popov",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "formidable": "^1.1.1",
+    "mongod": "^2.0.0",
+    "mongoose": "^4.12.1"
+  }
+}

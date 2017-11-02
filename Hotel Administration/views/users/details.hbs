@@ -1,0 +1,35 @@
+<h1>Welcome to your Profile</h1>
+
+{{#if hotels}}
+    <h2>Your hotels:</h2>
+
+    {{#each hotels}}
+        <a href="/details?id={{this._id}}">
+            <fieldset>
+                <legend>{{this.title}}</legend>
+                <p>{{this.location}}</p>
+                <img class="hotelImg" src="{{this.image}}" alt="hotel image">
+                <p>{{this.description}}</p>
+            </fieldset>
+        </a>
+    {{/each}}
+
+{{else}}
+    <h2>You have no hotels yet.</h2>
+{{/if}}
+
+{{#if comments}}
+    <h2>Your comments:</h2>
+    {{#each comments}}
+        <fieldset>
+            <legend>
+                <p>{{this.userName}}</p>
+            </legend>
+            <p>{{this.userComment}}</p>
+            <p>{{this.datePosted}}</p>
+        </fieldset>
+    {{/each}}
+
+{{else}}
+    <h2>You have no comments yet.</h2>
+{{/if}}

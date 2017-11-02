@@ -1,0 +1,10 @@
+<h1>Hotel Edit</h1>
+
+<form action="/hotel/edit/{{selectedHotel.id}}" method="post">
+    Title: <input type="text" value="{{selectedHotel.title}}" name="title">
+    Location: <input type="text" value="{{selectedHotel.location}}" name="location">
+    Image: <input type="text" value="{{selectedHotel.image}}" name="image">
+    Description: <input type="text" value="{{selectedHotel.description}}" name="description">
+
+    <input type="submit" value="Submit">
+</form>

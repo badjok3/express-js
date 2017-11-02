@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+.container {
+    padding-left: 25%
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline-block
+}
+
+.menu li:after {
+    content: "\00a0";
+}
+
+.error {
+    color: red;
+}
+
+#details {
+    margin: 3px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#details img {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+table {
+    align-content: center;
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+}
+
+table th {
+    align-content: center;
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+}
+table td {
+    align-content: center;
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+}

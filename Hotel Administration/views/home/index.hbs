@@ -1,0 +1,15 @@
+{{#if hotels}}
+    <h1>List</h1>
+    {{#each hotels}}
+        <a href="/details?id={{this._id}}">
+            <fieldset>
+                <legend>{{this.title}}</legend>
+                <p>{{this.location}}</p>
+                <img class="hotelImg" src="{{this.image}}" alt="hotel image">
+                <p>{{this.description}}</p>
+            </fieldset>
+        </a>
+    {{/each}}
+{{else}}
+    <h1>Welcome to our hotels page</h1>
+{{/if}}

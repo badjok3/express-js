@@ -1,0 +1,26 @@
+{{#if cars}}
+    <h1>Here are all the available cars:</h1>
+    {{#each cars}}
+        <div id="details">
+            <h2>{{this.make}} {{this.model}}</h2>
+            <img src="{{this.imageUrl}}">
+            <h3>Year: {{this.year}}</h3>
+            <h2>Price Per Day (BGN): {{this.pricePerDay}}</h2>
+            <h3>Horsepower: {{this.horsepower}}</h3>
+            <h3>Engine: {{this.engine}}</h3>
+            {{#if this.description}}
+                <h3>Additional Info: </h3>
+                <p> {{this.description}}</p>
+            {{/if}}
+            <a href="/cars/rent/:{{this._id}}">
+                <button>Rent >></button>
+            </a>
+                <a href="/cars/edit/:{{this._id}}">
+                    <button>Edit</button>
+                </a>
+        </div>
+    {{/each}}
+
+{{else}}
+    <h1>Sorry, there are no cars available.</h1>
+{{/if}}

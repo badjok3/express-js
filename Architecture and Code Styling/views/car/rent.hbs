@@ -1,0 +1,24 @@
+{{#if car.isRented}}
+    <div id="details">
+        <h2>{{car.make}} {{car.model}}</h2>
+        <img src="{{car.imageUrl}}">
+        <h2>Price Per Day (BGN): {{car.pricePerDay}}</h2>
+        <h3>Year: {{car.year}}</h3>
+        <h3>Horsepower: {{car.horsepower}}</h3>
+        <h3>Engine: {{car.engine}}</h3>
+
+        <h3>Rent for: {{car.days}} days</h3>
+    </div>
+{{else}}
+    <form id="details" action="/cars/rent/:{{car._id}}" method="post">
+        <h2>{{car.make}} {{car.model}}</h2>
+        <img src="{{car.imageUrl}}">
+        <h2>Price Per Day (BGN): {{car.pricePerDay}}</h2>
+        <h3>Year: {{car.year}}</h3>
+        <h3>Horsepower: {{car.horsepower}}</h3>
+        <h3>Engine: {{car.engine}}</h3>
+
+        <h3>Rent for: <input type="number" name="days"> days</h3>
+        <input type="submit" value="Rent!">
+    </form>
+{{/if}}

@@ -1,0 +1,13 @@
+<h1>Car details:</h1>
+
+<form action="/cars/edit/:{{car.id}}" method="post">
+    Make: <input type="text" name="make" value="{{car.make}}">
+    Model: <input type="text" name="model" value="{{car.model}}">
+    Price Per Day (BGN): <input type="number" name="pricePerDay" value="{{car.pricePerDay}}">
+    Year: <input type="number" name="year" value="{{car.year}}">
+    Image URL: <input type="text" name="imageUrl" value="{{car.imageUrl}}">
+    Horsepower: <input type="text" name="horsepower" value="{{car.horsepower}}">
+    Engine: <input type="text" name="engine" value="{{car.engine}}">
+    Additional Info: <textarea type="text" name="description" value="{{car.description}}"></textarea>
+    <input type="submit" value="Edit">
+</form>

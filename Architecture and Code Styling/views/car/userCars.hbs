@@ -1,0 +1,28 @@
+{{#if cars}}
+    <h1>Here are your rented cars:</h1>
+    <table>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Engine</th>
+        <th>Horsepower</th>
+        <th>Rented For (Days)</th>
+        <th>Price Per Day (BGN)</th>
+        <th>Total Cost</th>
+        {{#each cars}}
+            <tr>
+                <td>{{this.make}}</td>
+                <td>{{this.model}}</td>
+                <td>{{this.year}}</td>
+                <td>{{this.engine}}</td>
+                <td>{{this.horsepower}}</td>
+                <td>{{this.days}}</td>
+                <td>{{this.pricePerDay}}</td>
+                <td>{{this.cost}}</td>
+                <td><a href="/cars/rent/:{{this.id}}"><button>Details >></button></a></td>
+            </tr>
+        {{/each}}
+    </table>
+    {{else}}
+    <h1>You haven't rented any cars yet. Take a look at our <a href="/cars">available cars</a>.</h1>
+{{/if}}

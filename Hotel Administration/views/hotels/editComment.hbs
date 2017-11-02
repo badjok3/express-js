@@ -1,0 +1,10 @@
+<h1>Edit comment: </h1>
+<form action="/comment/edit/{{comment.id}}" method="post">
+    <legend>
+        <input type="text" value="{{comment.userName}}" disabled>
+    </legend>
+    <input type="text" value="{{comment.title}}" name="title">
+    <input type="text" value="{{comment.userComment}}" name="userComment">
+
+    <input type="submit" value="Submit">
+</form>
