@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doner Place</title>
+    <link href="/css/site.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <span class="logo">Doner  Place</span>
+    {{#if currentUser}}
+        <span class="greeting">Welcome, {{currentUser.username}}! | <form id="logout-form" action="/logout"
+                                                                          method="post"></form>
+                    <a href="javascript:document.getElementById('logout-form').submit()"
+                       class="button">Logout</a></span>
+    {{/if}}
+
+    <ul class="menu">
+        <li><a class="button" href="/">Home</a></li>
+        <li><a class="button" href="/">Order</a></li>
+
+        {{#if currentUser}}
+            <li><a class="button" href="/myOrders">My Orders</a></li>
+            <li><a class="button" href="/orders">All Orders</a></li>
+            <li><a class="button" href="/productCreate">Create Product</a></li>
+        {{/if}}
+
+        {{#unless currentUser}}
+            <li><a class="button" href="/login">Login</a></li>
+            <li><a class="button" href="/register">Register</a></li>
+        {{/unless}}
+    </ul>
+</header>
+
+<main>
+    {{#if globalError}}
+        <span>{{globalError}}</span> {{/if}} {{{body}}}
+</main>
+</body>
+
+<footer>Doner Place &copy; 2017</footer>
+</html>

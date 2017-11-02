@@ -1,0 +1,63 @@
+<h1>Order details</h1>
+
+<div class="catalog">
+    <div class="column">
+        <img src="{{order.imageUrl}}">
+    </div>
+    <div class="column">
+        <h2>{{order.product.category}}, {{order.product.size}}cm</h2>
+        <h3>{{order.date}}</h3>
+        {{#if order.toppings}}
+            <div class="toppings">
+                <h3>Toppings:</h3>
+                {{#each order.toppings}}
+                    {{this}}<br>
+                {{/each}}
+            </div>
+        {{/if}}
+    </div>
+    <div class="status">
+        <div class="status-block">
+            <span class="progress-right"></span>
+            {{#if pending}}
+                <span class="checkpoint current"></span><br>
+            {{else}}
+                <span class="checkpoint"></span><br>
+            {{/if}}
+            Pending
+        </div>
+        <div class="status-block">
+            <span class="progress-left"></span>
+            <span class="progress-right"></span>
+            {{#if inProgress}}
+                <span class="checkpoint current"></span><br>
+            {{else}}
+                <span class="checkpoint"></span><br>
+            {{/if}}
+            In progress
+        </div>
+        <div class="status-block">
+            <span class="progress-left"></span>
+            <span class="progress-right"></span>
+            {{#if transit}}
+                <span class="checkpoint current"></span><br>
+            {{else}}
+                <span class="checkpoint"></span><br>
+            {{/if}}
+            In transit
+        </div>
+        <div class="status-block">
+            <span class="progress-left"></span>
+            {{#if delivered}}
+                <span class="checkpoint current"></span><br>
+            {{else}}
+                <span class="checkpoint"></span><br>
+            {{/if}}
+            Delivered
+        </div>
+
+        {{#if currentUser.isAdmin}}
+            <a href="/orders" class="button">Change status</a>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,42 @@
+{{#if orders}}
+    <h1>Manage orders</h1>
+
+    <div class="orders">
+        {{#each orders}}
+            <form method="post" action="/order/edit/{{this.id}}">
+                <div class="order">
+                    <span class="order-time">{{this.date}}</span>
+                    <span class="order-name">{{this.product.category}}, {{this.product.size}} cm</span>
+                    <span class="order-status">
+							<select name="status">
+                                {{#if this.pending}}
+                                    <option value="Pending" selected>Pending</option>
+                                {{else}}
+                                    <option value="Pending">Pending</option>
+                                {{/if}}
+                                {{#if this.inProgress}}
+                                    <option value="In Progress" selected>In Progress</option>
+                                {{else}}
+                                    <option value="In Progress">In Progress</option>
+                                {{/if}}
+                                {{#if this.inTransit}}
+                                    <option value="In Transit" selected>In Transit</option>
+                                {{else}}
+                                    <option value="In Transit">In Transit</option>
+                                {{/if}}
+                                {{#if this.delivered}}
+                                    <option value="Delivered" selected>Delivered</option>
+                                {{else}}
+                                    <option value="Delivered">Delivered</option>
+                                {{/if}}
+							</select>
+						</span>
+                    <input type="submit" class="button" value="Change Status">
+                    <a href="/order/details/{{this.id}}" class="button order-button">Details</a>
+                </div>
+            </form>
+        {{/each}}
+    </div>
+{{else}}
+    <h1>There are currently no orders</h1>
+{{/if}}
