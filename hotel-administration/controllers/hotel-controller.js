@@ -97,7 +97,7 @@ module.exports = {
                     let exportComment = {
                         userComment: currentComment.userComment,
                         userName: currentComment.userName,
-                        datePosted: currentComment.datePosted.UTC()
+                        datePosted: currentComment.datePosted
                     }
 
                     allComments.push(exportComment)
