@@ -24,7 +24,7 @@ module.exports = {
                         }
                     }
 
-                    res.render('car/cars', {cars: availableCars, user: currentUser})
+                    res.redirect('/');
                 })
             })
         })
