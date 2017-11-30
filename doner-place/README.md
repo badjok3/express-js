@@ -8,9 +8,9 @@
 	<p>Product parameters:</p>
 	<ul>
 		<li>select category from dropdown menu</li>
-		<li>enter image url from img folder in the project directory (ex: /img/beef-21.png)</li>
+		<li>enter image url from img folder in the project directory <strong>(ex: /img/beef-21.png)</strong></li>
 		<li>enter product size</li>
-		<li>enter toppings, separated by ", " (ex: pickles, onion, lettuce)</li>
+		<li>enter toppings, separated by ", " <strong>(ex: pickles, onion, lettuce)</strong></li>
 	</ul>
 	<li>Delete products</li>
 	<li>View all orders</li>
