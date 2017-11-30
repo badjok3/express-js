@@ -2,7 +2,7 @@
 
 <h3>The project contains 3 main bits</h3>
 <h4>First bit - Admin</h4>
-<p>Admins can:</p><br>
+<p>Admins can:</p>
 <ul>
 	<li>Create products</li>
 	<p>Product parameters:</p>
@@ -18,7 +18,7 @@
 	<li>Update order status</li>
 </ul>
 <h4>Second bit - User</h4>
-<p>Users can:</p><br>
+<p>Users can:</p>
 <ul>
 	<li>View available products</li>
 	<li>Place orders</li>
