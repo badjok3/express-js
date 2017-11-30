@@ -1,5 +1,5 @@
 <h1>You need to have MongoDb on your device to run the projects.<h1>
-
+<p>Default project admin (for test purposes) - <strong>username: Admin password: Admin</strong> </p>
 <h2>How to run:</h2>
 <ol>
 <li>Run cmd in your MongoDb directory</li>
