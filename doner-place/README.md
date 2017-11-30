@@ -1,6 +1,6 @@
 # express-doner-place
 
-<h3>The project contains 3 main bits</h3>
+<h3>Express Doner Place is a project consisting of 3 main bits</h3>
 <h4>First bit - Admin</h4>
 <p>Admins can:</p><br>
 <ul>
@@ -26,4 +26,8 @@
 	<li>View order details</li>
 </ul>
 <h4>Third bit - Guest</h4>
-<p>Guests can only view available products</p>
+<p>Guests can:</p>
+<ul>
+	<li>View available products</li>
+	<li>Register</li>
+</ul>
