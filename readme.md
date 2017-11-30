@@ -10,5 +10,5 @@
 </ul>
 <li>Go to the selected project directory</li>
 <li>Run cmd and enter <strong>npm install</strong> to install all project dependencies</li>
-<li>Now we play the wating game..</li>
+<li>Now we play the waiting game..</li>
 <li>Enter <strong>npm start</strong></li>
