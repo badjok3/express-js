@@ -2,15 +2,15 @@
 
 <h3>Express Doner Place is a project consisting of 3 main bits</h3>
 <h4>First bit - Admin</h4>
-<p>Admins can:</p><br>
+<p>Admins can:</p>
 <ul>
 	<li>Create products</li>
 	<p>Product parameters:</p>
 	<ul>
 		<li>select category from dropdown menu</li>
-		<li>enter image url from img folder in the project directory (ex: /img/beef-21.png)</li>
+		<li>enter image url from img folder in the project directory <strong>(ex: /img/beef-21.png)</strong></li>
 		<li>enter product size</li>
-		<li>enter toppings, separated by ", " (ex: pickles, onion, lettuce)</li>
+		<li>enter toppings, separated by ", " <strong>(ex: pickles, onion, lettuce)</strong></li>
 	</ul>
 	<li>Delete products</li>
 	<li>View all orders</li>
@@ -18,7 +18,7 @@
 	<li>Update order status</li>
 </ul>
 <h4>Second bit - User</h4>
-<p>Users can:</p><br>
+<p>Users can:</p>
 <ul>
 	<li>View available products</li>
 	<li>Place orders</li>
