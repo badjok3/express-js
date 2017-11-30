@@ -5,8 +5,8 @@
 <p>Admins can:</p>
 <ul>
 	<li>Create products</li>
-	<p>Product parameters:</p>
 	<ul>
+	<p>Product parameters:</p>
 		<li>select category from dropdown menu</li>
 		<li>enter image url from img folder in the project directory (ex: /img/beef-21.png)</li>
 		<li>enter product size</li>
